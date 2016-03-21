@@ -14,7 +14,6 @@
 </ul>
 
 <script type="text/javascript">
-
     var aqiData = [
         ["北京", 90],
         ["上海", 50],
@@ -23,9 +22,7 @@
         ["成都", 90],
         ["西安", 100]
     ];
-
     (function () {
-
         /*
          在注释下方编写代码
          遍历读取aqiData中各个城市的数据
@@ -37,20 +34,15 @@
                 array.push([aqiData[i][0], aqiData[i][1]]);
             }
         }
-
         array.sort(function(pre,next){
             return next[1]-pre[1];
         })
-
         var result = '';
         for (i = 0;i<array.length;i++){
             result += '<li>第' + (i + 1) + '名：' + array[i][0] + ' ' + array[i][1] + '</li>';
         }
-
         document.getElementById('aqi-list').innerHTML = result;
-
     })();
-
 </script>
 </body>
 </html>
